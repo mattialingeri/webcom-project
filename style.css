@@ -349,13 +349,11 @@ footer a:hover{
   white-space: nowrap;
 }
 
-/* ------------------------------ */
-/*         MOBILE FIXES           */
-/* ------------------------------ */
+
 
 @media (max-width: 900px) {
 
-    /* HEADER */
+
     header {
         flex-direction: column;
         padding: 1em;
@@ -376,7 +374,7 @@ footer a:hover{
         margin: 1em 0 0 0;
     }
 
-    /* HERO FIX */
+ 
     .hero {
         height: auto;
         padding: 4em 1em;
@@ -392,7 +390,7 @@ footer a:hover{
         font-size: 2rem;
     }
 
-    /* ABOUT SECTION */
+
     .about .container {
         flex-direction: column;
         text-align: center;
@@ -402,18 +400,17 @@ footer a:hover{
         max-width: 90%;
     }
 
-    /* IMPACT STATS */
+   
     .stats {
         flex-direction: column;
         gap: 1.2em;
     }
 
-    /* MENU GRID */
     .menu-items {
         grid-template-columns: 1fr;
     }
 
-    /* SUPPORT CARDS */
+ 
     .support-cards {
         flex-direction: column;
         align-items: center;
@@ -423,7 +420,7 @@ footer a:hover{
         width: 90%;
     }
 
-    /* TESTIMONIALS */
+
     .testimonial-container {
         max-width: 90%;
     }
@@ -447,7 +444,7 @@ footer a:hover{
 }
 
 
-    /* Smaller text on very small phones */
+  
     .hero h1 {
         font-size: 1.8rem;
     }
@@ -472,7 +469,7 @@ footer a:hover{
   }
 }
 
-/* Side Navigation */
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -519,10 +516,7 @@ footer a:hover{
     border-radius: 5px;
 }
 
-/* Hide original nav on mobile */
-@media (max-width: 900px) {
-    header nav {
-        display: none;
-    }
+
 }
+
 
