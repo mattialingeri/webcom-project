@@ -516,7 +516,12 @@ footer a:hover{
     border-radius: 5px;
 }
 
+@media (max-width: 900px) {
+    header nav {
+     dsiplay: none;
+    }
 
 }
+
 
 
