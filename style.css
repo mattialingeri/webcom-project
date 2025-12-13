@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -188,10 +189,7 @@ nav a::after{
     gap: 20px;
 }
 
-.menu .item{
-    
-    width: 250 px;
-}
+
 
 .menu img{
     width: 100%;
@@ -518,11 +516,122 @@ footer a:hover{
 
 @media (max-width: 900px) {
     header nav {
-     dsiplay: none;
+     display: none;
     }
 
 }
 
+@media (min-width: 1600px) {
+    .page-wrapper {
+        max-width: 1300px;
+    }
+}
 
+/* ===== DESKTOP LAYOUT WITH SIDEBAR ===== */
+
+.layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+}
+
+/* main column */
+.content {
+    min-width: 0;
+}
+
+/* sidebar */
+.sidebar {
+    align-self: start;
+    position: scroll;
+    top: 120px; /* below header */
+}
+
+.sidebar-box {
+    background-color: #f7efe5;
+    padding: 1.8rem;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.sidebar-box h3 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+    color: #4b3832;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.sidebar-list li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.sidebar-highlight {
+    background-color: #6b4f4f;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+
+    }
+
+    .layout {
+        padding: 2rem 1rem;
+    }
+}
+
+/* ===== FORCE ABOUT + SIDEBAR SIDE BY SIDE ===== */
+
+.about-layout {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 300px !important;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.about-content {
+    min-width: 0;
+}
+
+/* sidebar positioning */
+.about .sidebar {
+    display: block;
+    align-self: start;
+    position: sticky;
+    top: 120px;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 1024px) {
+    .about-layout {
+        grid-template-columns: 1fr !important;
+    }
+
+    .about .sidebar {
+        display: none;
+    }
+}
 
 
