@@ -31,7 +31,7 @@ const testimonials = document.querySelectorAll(".testimonial");
         testimonials[testimonialIndex].classList.add("active");
     }
 
-    // Rotate every 3 seconds
+    
     setInterval(rotateTestimonials, 4000);
 
     function toggleNav() {
@@ -42,3 +42,4 @@ const testimonials = document.querySelectorAll(".testimonial");
 function closeNav() {
   document.getElementById("sideNav").style.width = "0";
 }
+
