@@ -1,0 +1,125 @@
+/* ------------------------------- */
+/*   Reveal.js Theme - BeanKind    */
+/* ------------------------------- */
+
+/* Root colors based on landing page */
+:root {
+    --bg-color: #f7f3ef;
+    --text-color: #333;
+    --heading-color: #4b3832;
+    --accent-color: #6b4f4f;
+    --secondary-color: #a3b18a;
+    --highlight-color: #ffc832;
+    --white: #ffffff;
+}
+
+/* Base Reveal.js slide style */
+.reveal {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Headings */
+.reveal h1, .reveal h2, .reveal h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+/* Paragraphs */
+.reveal p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Links */
+.reveal a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+.reveal a:hover {
+    opacity: 0.8;
+}
+
+/* Buttons inside slides */
+.reveal .btn {
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1em;
+}
+.reveal .btn.primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+.reveal .btn.secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+.reveal .btn:hover {
+    opacity: 0.9;
+}
+
+/* Lists */
+.reveal ul, .reveal ol {
+    margin-left: 1.3em;
+    font-size: 1.1rem;
+}
+
+/* Horizontal rules */
+.reveal hr {
+    border: none;
+    height: 1px;
+    background-color: var(--highlight-color);
+    margin: 1.5em 0;
+}
+
+/* Blockquotes */
+.reveal blockquote {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1em;
+    font-style: italic;
+    color: #555;
+}
+
+/* Code blocks */
+.reveal code, .reveal pre code {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #f6f8fa;
+    border-radius: 4px;
+    padding: 0.2em 0.4em;
+}
+
+/* Images */
+.reveal img {
+    max-width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Fragments (fade-in) */
+.reveal .fragment {
+    opacity: 0.4;
+    transition: opacity 0.4s ease-in-out;
+}
+.reveal .fragment.visible {
+    opacity: 1 !important;
+}
+
+/* Highlights for stats or key numbers */
+.reveal .highlight {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Small text */
+.reveal .small {
+    font-size: 0.8rem;
+    color: #666;
+}
